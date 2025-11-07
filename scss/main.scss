@@ -1,18 +1,46 @@
-@use "_variable.scss" as *;
-@use "_base.scss";
-@use "_header.scss";
+@use "variable.scss" as *;
+@use "base.scss" as *;
+@use "header.scss" as *;
+@use "themeToggle.scss" as *;
+@use "cards.scss" as *;
+@use "footer.scss" as *;
+@use "skills.scss" as *;
 
-body{
-    height: 100vh;
-    width: 100vw;
+.container{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
 }
 
-.world{
-    width:$dWH;
-    height:$dWH;
-    background-color: rgb(144, 55, 170, 0.5);
-    position: absolute;
-    top: 40vh;
-    left:40vw;
-    
+.wrapper{
+    height: auto;
+    min-height: 100%;
+    width:100vw;
+    position:absolute;
+    top:0;
+    background: var(--bg);
+    color:var(--text);
+    line-height: 1.6;
+}
+
+div{
+    display: block;
+}
+
+
+// media
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .headerMainPage h1 {
+    font-size: 2rem;
+  }
+
+  .theme-label {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
 }

@@ -1,0 +1,29 @@
+@use "variable.scss" as *;
+
+// Cards
+
+.card{
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateY(0);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.card h2{
+    color:var(--title-text);
+    margin-bottom: 10px;
+}
+
+.card__content li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--shadow);
+}
+
+

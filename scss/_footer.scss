@@ -1,0 +1,21 @@
+@use "variable.scss" as *;
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--shadow);
+  opacity: 0.8;
+}
+
+footer a {
+  color: var(--title-text);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+

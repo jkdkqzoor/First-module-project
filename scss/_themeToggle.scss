@@ -1,0 +1,37 @@
+@use "variable.scss" as *;
+
+#toggle-theme{
+    display: none;
+}
+
+.theme-label{
+  z-index: 1;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--bg);
+  border: 2px solid var(--title-text);
+  color:var(--text);
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+
+#toggle-theme:checked ~ .theme-label{
+    background: var(--title-text);
+}
+
+#toggle-theme:checked ~ .wrappers{
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card-bg: #1f1f1f;
+  --title-text: #4aa3ff;
+  --shadow: rgba(255, 255, 255, 0.1);
+  
+
+}
+

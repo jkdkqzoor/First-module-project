@@ -1,2 +1,12 @@
 @use "sass:map";
-$dWH:20vh;
+$mainFont:  "Cinzel", serif;
+
+:root {
+  --bg: #f5f7fa;
+  --text: #222;
+  --card-bg: #fff;
+  --title-text: #0078ff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+

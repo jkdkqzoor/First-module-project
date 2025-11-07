@@ -1,0 +1,15 @@
+@use "variable.scss" as *;
+
+.headerMainPage{
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.headerMainPage h1{
+    font-size: 2.5rem;
+    color:var(--title-text);
+}
+.headerMainPage p{
+    font-size: 1.1rem;
+    opacity: 0.8;
+}

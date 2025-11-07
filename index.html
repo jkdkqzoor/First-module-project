@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>think later</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/tab-icon.jpg">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-    <div class="world">Hello world!</div>
+    <!-- Toggle theme -->
+    <input type="checkbox" id="toggle-theme">
+    <label for="toggle-theme" class="theme-label">Day/Night 🌙</label>
     
+    <div class="wrapper wrappers">
+
+    <div class="container">
+         <!-- Header -->
+        <header class="headerMainPage">
+          <h1 class="headerMainPage__h1">Yevhen Murmylo</h1>
+          <p class="headerMainPage__p">Front-end Developer | Designer | Creator</p> 
+        </header>
+
+        <!-- Main resume section -->
+
+        <main>
+            <div class="card" id="education">
+                <h2>Education</h2>
+                <div class="card__content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur atque accusamus nulla voluptatibus est dolorem ab ipsam nostrum eveniet perferendis, natus odio. Vel minima dolor placeat, possimus quod quibusdam. Ad.</p>
+                </div>
+            </div>
+
+            <div class="card" id="skills">
+                <a href="skills.html">
+                <h2>Skills</h2>
+                <div class="card__content">
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>Tailwind CSS</li>
+                        <li>Python, JavaScript</li>
+                    </ul>
+                </div>
+                </a>
+            </div>
+
+            <div class="card" id="projects">
+                <h2>Projects</h2>
+                <div class="card__content">
+                    <p>lorem</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+
+        <footer class="footerMainPage"><p>© 2025 Y.Murmylo | <a href="#">Telegram</a> | <a href="#">GitHub</a><br><a href="contacts.html">All Contacts</a></p></footer>
+
+    </div>
+    </div>
 </body>
 </html>
