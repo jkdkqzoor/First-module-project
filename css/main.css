@@ -141,7 +141,7 @@ footer a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background: linear-gradient(rgba(0, 0, 0, var(--overlay-opacity)), rgba(0, 0, 0, var(--overlay-opacity))), url("images/i-love-coding.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, var(--overlay-opacity)), rgba(0, 0, 0, var(--overlay-opacity))), url("/images/i-love-coding.png") center/cover no-repeat;
 }
 
 .myfavLang {
