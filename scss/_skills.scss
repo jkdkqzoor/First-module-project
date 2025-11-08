@@ -11,13 +11,14 @@
     color:var(--text);
     line-height: 1.6;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background: 
     linear-gradient(
       rgba(0, 0, 0, var(--overlay-opacity)),
       rgba(0, 0, 0, var(--overlay-opacity))),
-    url('images/i-love-coding.png') center/cover no-repeat;
+    url('images/i-love-coding.png') center/contain no-repeat;
+    background-color: rgba(235, 235, 235);
 }
 
 .myfavLang{
