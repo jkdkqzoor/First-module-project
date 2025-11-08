@@ -10,12 +10,14 @@
     top:0;
     color:var(--text);
     line-height: 1.6;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background: 
     linear-gradient(
       rgba(0, 0, 0, var(--overlay-opacity)),
       rgba(0, 0, 0, var(--overlay-opacity))),
-    url('First-module-project/images/i-love-coding.png') cover no-repeat;
+    url('images/i-love-coding.png') center/cover no-repeat;
 }
 
 .myfavLang{
