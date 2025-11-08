@@ -15,16 +15,23 @@
     <!-- Wrapper -->
     <div class="skillsbody wrappers">
         <!-- Navigation/hidden menu -->
+       <header class="skillsheader">
         <nav>
-            <div class="navi">
-                <ul>
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="">Assign form</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-
-                </ul>
-            </div>
-        </nav>
+        <div>
+          <ul class="navi navigation" id="navi">
+            <li class="navi__item"><img src="/images/tab-icon.jpg" alt="logo" height="40px" width="40px"></li>
+            <li class="navi__item"><a href="index.html">Homepage</a></li>
+            <li class="navi__item"><a href="">Assign form</a></li>
+            <li class="navi__item"><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" id="ham">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+      </nav>
+      </header>
 
         <main>
             <section>
@@ -34,5 +41,18 @@
             </section>
         </main>
     </div>
+
+   <script>
+  const hamburger = document.getElementById("ham");
+  const navi = document.getElementById("navi");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navi.classList.toggle("active");
+  });
+</script>
+
+
 </body>
+
 </html>
