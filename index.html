@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="icon" href="tab-icon.jpg" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
-  <!-- Toggle theme -->
-  <input type="checkbox" id="toggle-theme" />
-  <label for="toggle-theme" class="theme-label">🌙</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="tab-icon.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
 
-  <div class="skillsbody wrappers">
-    <!-- Navigation -->
-    <header class="skillsheader">
-      <nav>
-        <ul class="navi navigation" id="navi">
-          <li class="navi__item"><img src="tab-icon.jpg" alt="logo" width="45" height="45" /></li>
-          <li class="navi__item"><a href="index.html">Homepage</a></li>
-          <li class="navi__item"><a href="skills.html">skills</a></li>
-          <li class="navi__item"><a href="contacts.html">Contacts</a></li>
-        </ul>
+    <input type="checkbox" id="toggle-theme" />
+    <label for="toggle-theme" class="theme-label">🌙</label>
 
-        <div class="hamburger" id="ham">
-          <span></span><span></span><span></span>
-        </div>
-      </nav>
-    </header>
+    <div class="skillsbody wrappers">
 
-    <!-- Main -->
-    <main class="skills-showcase">
-      <h1 class="skills-title">CSS Playground 🧩</h1>
-      <p class="skills-subtitle">Explore my creative experiments with Grid, Flexbox & transitions!</p>
+      <header class="skillsheader">
+        <nav>
+          <ul class="navi navigation" id="navi">
+            <li class="navi__item">
+              <img src="tab-icon.jpg" alt="logo" width="45" height="45" />
+            </li>
+            <li class="navi__item"><a href="index.html">Homepage</a></li>
+            <li class="navi__item"><a href="skills.html">Skills</a></li>
+            <li class="navi__item"><a href="contacts.html">Contacts</a></li>
+          </ul>
 
-      <section class="grid-showcase">
-        <!-- Each card shows an example -->
-        <div class="skill-card grid-demo fade-in">
-          <h2>CSS Grid</h2>
-          <div class="grid-example">
-            <div class="box red"></div>
-            <div class="box blue"></div>
-            <div class="box yellow"></div>
-            <div class="box green"></div>
+          <div class="hamburger" id="ham">
+            <span></span><span></span><span></span>
           </div>
-          <p>Perfect alignment and creative layouts made simple.</p>
-        </div>
+        </nav>
+      </header>
 
-        <div class="skill-card flex-demo slide-up">
-          <h2>Flexbox</h2>
-          <div class="flex-example">
-            <div class="circle a"></div>
-            <div class="circle b"></div>
-            <div class="circle c"></div>
+
+      <main class="skills-showcase">
+        <h1 class="skills-title">CSS Playground 🧩</h1>
+        <p class="skills-subtitle">
+          Explore my creative experiments with Grid, Flexbox & transitions!
+        </p>
+
+        <section class="grid-showcase">
+          <div class="skill-card grid-demo fade-in">
+            <h2>CSS Grid</h2>
+            <div class="grid-example">
+              <div class="box red"></div>
+              <div class="box blue"></div>
+              <div class="box yellow"></div>
+              <div class="box green"></div>
+            </div>
+            <p>Perfect alignment and creative layouts made simple.</p>
           </div>
-          <p>Smart, adaptive, and centered like never before!</p>
-        </div>
 
-        <div class="skill-card transition-demo fade-in">
-          <h2>Transitions</h2>
-          <div class="transition-example">
-            <div class="mover"></div>
+          <div class="skill-card flex-demo slide-up">
+            <h2>Flexbox</h2>
+            <div class="flex-example">
+              <div class="circle a"></div>
+              <div class="circle b"></div>
+              <div class="circle c"></div>
+            </div>
+            <p>Smart, adaptive, and centered like never before!</p>
           </div>
-          <p>Fluid motion for engaging web experiences.</p>
-        </div>
-      </section>
-    </main>
 
-    <footer class="footerMainPage fade-in">
-      <p>© 2025 Yevhen Murmylo | <a href="#">GitHub</a> | <a href="#">Telegram</a></p>
-    </footer>
-  </div>
-  
-    <script src="js/main.js">
-      
-    </script>
+          <div class="skill-card transition-demo fade-in">
+            <h2>Transitions</h2>
+            <div class="transition-example">
+              <div class="mover"></div>
+            </div>
+            <p>Fluid motion for engaging web experiences.</p>
+          </div>
+        </section>
+      </main>
 
-</body>
+      <footer class="footerMainPage fade-in">
+        <p>
+          © 2025 Yevhen Murmylo |
+          <a href="https://github.com/jkdkqzoor">GitHub</a> |
+          <a href="https://t.me/downf4ll">Telegram</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

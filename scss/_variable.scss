@@ -1,14 +1,12 @@
 @use "sass:map";
-$mainFont:  "Cinzel", serif;
+$mainFont: "Cinzel", serif;
 
 :root {
   --bg: #f5f7fa;
   --text: #222;
-  --textmenu:#000000;
+  --textmenu: #000000;
   --card-bg: #fff;
   --title-text: #0078ff;
   --shadow: rgba(0, 0, 0, 0.1);
-  --overlay-opacity:0.2;
+  --overlay-opacity: 0.2;
 }
-
-

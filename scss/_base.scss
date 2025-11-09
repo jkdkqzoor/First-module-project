@@ -1,24 +1,24 @@
 @use "variable.scss" as *;
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $mainFont;
-    font-weight: 600;
-    transition: all 0.3s ease-in;
-    color:var(--text);
-}
-
-html{
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+  color: var(--text);
 }
 
-ul{
-    list-style: none;
+html {
+  scroll-behavior: smooth;
 }
-body html{
-    height: 100%;
+
+ul {
+  list-style: none;
+}
+body html {
+  height: 100%;
 }

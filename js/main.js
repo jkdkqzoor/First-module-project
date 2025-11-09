@@ -1,18 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* =========================
-     🌙 THEME TOGGLE (Safe)
-  ========================= */
+
   const toggle = document.getElementById("toggle-theme");
   const body = document.body;
 
   if (toggle) {
-    // Apply saved theme on load
     if (localStorage.getItem("theme") === "dark") {
       body.classList.add("dark-mode");
       toggle.checked = true;
     }
 
-    // Listen for theme toggle
     toggle.addEventListener("change", () => {
       if (toggle.checked) {
         body.classList.add("dark-mode");
@@ -24,9 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     🍔 HAMBURGER MENU (Safe)
-  ========================= */
   const hamburger = document.getElementById("ham");
   const navi = document.getElementById("navi");
 
@@ -37,9 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     🎬 SCROLL ANIMATIONS (Safe)
-  ========================= */
   const animElements = document.querySelectorAll(".fade-in, .slide-up");
   if (animElements.length > 0) {
     const observer = new IntersectionObserver(
@@ -54,9 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     animElements.forEach((el) => observer.observe(el));
   }
 
-  /* =========================
-     🟦 MOVER ANIMATION (Safe)
-  ========================= */
   const mover = document.querySelector(".mover");
   if (mover) {
     mover.addEventListener("mouseover", () => {
@@ -70,9 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     📬 MODAL FUNCTIONALITY (Safe)
-  ========================= */
   const modal = document.getElementById("contactModal");
   const openBtn = document.querySelector(".open-modal-btn");
   const closeBtn = document.getElementById("closeModal");

@@ -1,31 +1,30 @@
 @use "variable.scss" as *;
 
-#toggle-theme{
-    display: none;
+#toggle-theme {
+  display: none;
 }
 
-.theme-label{
+.theme-label {
   z-index: 1;
   position: fixed;
   top: 20px;
   right: 20px;
   background: var(--bg);
   border: 2px solid rgb(0, 0, 0, 0.6);
-  color:var(--text);
+  color: var(--text);
   border-radius: 25px;
   padding: 8px 16px;
   font-size: 1rem;
   cursor: pointer;
   user-select: none;
   box-shadow: 0 2px 8px var(--shadow);
-  background-color:rgb(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0, 0.1);
   z-index: 1700;
 }
 
-
-#toggle-theme:checked ~ .theme-label{
-    background: rgb(0, 0, 0, 0.4);
-    color: rgb(255, 255, 255, 0.8);
+#toggle-theme:checked ~ .theme-label {
+  background: rgb(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255, 0.8);
 }
 
 body.dark-mode {
@@ -37,5 +36,3 @@ body.dark-mode {
   --overlay-opacity: 0.7;
   --textmenu: #f1f1f1;
 }
-
-

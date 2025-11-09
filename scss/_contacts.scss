@@ -1,6 +1,4 @@
 @use "variable.scss" as *;
-@use "base.scss" as *;
-@use "skills.scss" as *;
 
 /* --- Modal --- */
 .modal {
@@ -55,7 +53,7 @@
   transform: scale(1.2);
 }
 
-/* --- Contact button --- */
+
 .open-modal-btn {
   background-color: var(--title-text);
   color: white;
@@ -71,7 +69,6 @@
   background-color: #005fcc;
 }
 
-/* --- Contact Form inside Modal --- */
 .contact-form {
   display: flex;
   flex-direction: column;
