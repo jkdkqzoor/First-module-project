@@ -10,15 +10,8 @@
     top:0;
     color:var(--text);
     line-height: 1.6;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, var(--overlay-opacity)),
-      rgba(0, 0, 0, var(--overlay-opacity))),
-    url('images/i-love-coding.png') center/contain no-repeat;
-    background-color: rgba(235, 235, 235);
+    background-color: var(--bg);
+    z-index: 1;
 }
 
 .myfavLang{
@@ -32,6 +25,7 @@
 
 
 .skillsheader{
+    z-index: 1500;
     position: relative;
     font-size: 20px;
     background-color: var(--hud);
@@ -62,4 +56,131 @@
     display: flex;
     align-items: center;
     border-radius: 20px;
+}
+
+
+/* === Skills Showcase Page === */
+.skills-showcase {
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2.8rem;
+  color: var(--title-text);
+  margin-bottom: 10px;
+}
+
+.skills-subtitle {
+  opacity: 0.8;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.grid-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Skill Card */
+.skill-card {
+  background: var(--card-bg);
+  box-shadow: 0 4px 12px var(--shadow);
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) rotateX(6deg);
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.skill-card h2 {
+  color: var(--title-text);
+  margin-bottom: 15px;
+}
+
+/* Grid Demo */
+.grid-example {
+  display: grid;
+  grid-template-columns: repeat(2, 60px);
+  grid-template-rows: repeat(2, 60px);
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.grid-example .box {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.red { background: #ff5252; }
+.blue { background: #2196f3; }
+.yellow { background: #ffeb3b; }
+.green { background: #4caf50; }
+
+.grid-example .box:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Flexbox Demo */
+.flex-example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.flex-example .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.a { background: #ff9800; }
+.b { background: #03a9f4; }
+.c { background: #e91e63; }
+
+.flex-example .circle:hover {
+  transform: translateY(-10px) scale(1.2);
+}
+
+/* Transition Demo */
+.transition-example {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.mover {
+  width: 50px;
+  height: 50px;
+  background: var(--title-text);
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+/* Fade-in Animations */
+.fade-in, .slide-up {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible, .slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

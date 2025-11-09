@@ -1,20 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/tab-icon.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts</title>
+  <link rel="icon" type="image/x-icon" href="tab-icon.jpg" />
 
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <!-- Toggle theme -->
-    <input type="checkbox" id="toggle-theme">
-    <label for="toggle-theme" class="theme-label">Day/Night 🌙</label>
-    <!-- Wrapper -->
-    <div class="wrapper">
+  <!-- Theme toggle -->
+  <input type="checkbox" id="toggle-theme" />
+  <label for="toggle-theme" class="theme-label">🌙</label>
+
+  <div class="wrapper wrappers">
+    <!-- Header with Hamburger -->
+    <header class="skillsheader">
+      <nav>
+        <ul class="navi navigation" id="navi">
+          <li class="navi__item"><img src="tab-icon.jpg" alt="logo" height="40px" width="40px" /></li>
+          <li class="navi__item"><a href="index.html">Homepage</a></li>
+          <li class="navi__item"><a href="skills.html">Skills</a></li>
+          <li class="navi__item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <div class="container">
+      <header class="headerMainPage" style="margin-top: 80px;">
+        <h1>Contact Me</h1>
+        <p>Want to collaborate or ask something? Let’s get in touch!</p>
+      </header>
+
+      <main>
+        <div class="card" id="contact-info">
+          <h2>Find Me Online</h2>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:">yevhenmurmylo@gmail.com</a></li>
+            <li><strong>Telegram:</strong> <a href="" target="_blank">@yourtelegram</a></li>
+            <li><strong>GitHub:</strong> <a href="" target="_blank">github.com/yourgithub</a></li>
+            <li><strong>LinkedIn:</strong> <a href="" target="_blank">linkedin.com/in/yourlinkedin</a></li>
+          </ul>
+          <button class="open-modal-btn">Send a Message</button>
+        </div>
+      </main>
+
+      <footer>
+        <p>© 2025 Y.Murmylo | <a href="#">Telegram</a> | <a href="#">GitHub</a> | <a href="index.html">Homepage</a></p>
+      </footer>
     </div>
-    
+  </div>
+
+  <!-- Modal Window -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Send a Message</h2>
+      <form action="#" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

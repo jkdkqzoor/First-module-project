@@ -19,6 +19,7 @@
   user-select: none;
   box-shadow: 0 2px 8px var(--shadow);
   background-color:rgb(0, 0, 0, 0.1);
+  z-index: 1700;
 }
 
 
@@ -27,13 +28,14 @@
     color: rgb(255, 255, 255, 0.8);
 }
 
-#toggle-theme:checked ~ .wrappers{
+body.dark-mode {
   --bg: #121212;
   --text: #f1f1f1;
   --card-bg: #1f1f1f;
   --title-text: #4aa3ff;
   --shadow: rgba(255, 255, 255, 0.1);
-  --overlay-opacity:0.7;
-  --textmenu:#f1f1f1;
+  --overlay-opacity: 0.7;
+  --textmenu: #f1f1f1;
 }
+
 
