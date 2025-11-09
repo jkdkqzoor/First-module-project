@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
           if (entry.isIntersecting) entry.target.classList.add("visible");
         });
       },
-      { threshold: 0.15 }
     );
 
     animElements.forEach((el) => observer.observe(el));
